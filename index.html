@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fart Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+   <!-- Navigation -->
+<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class = "container">
+       <h2 id = "logo" style = "font-weight: bold;"><img src="images/fart-clipart-16 1.png" style = "width: 9%">
+        Fart Counter
+
+       </h2>
+       
+	</div>
+	<button
+	type="button"
+	class="navbar-toggler"
+	data-toggle="collapse"
+	data-target="#navbarResponsive"
+  >
+    <span class = "navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id = "navbarResponsive">
+	  <ul class = "navbar-nav">
+		  <li class = "nav-item">
+			  <a class = "nav-link active" href = "#">Home</a>
+		  </li>
+		  <li class = "nav-item">
+			  <a class = "nav-link" href = "#">Account</a>
+		  </li>
+		  <li class = "nav-item">
+			  <a class = "nav-link" href = "#">Blog</a>
+		  </li>
+		  <li class = "nav-item">
+			  <a class = "nav-link" href = "#">Contact</a>
+		  </li>
+		  <li class = "nav-item">
+			  <a class = "nav-link" href = "#">
+                <button class="btn btn-danger" id = "nav-btn">DARK</button>
+              </a>
+		  </li>
+	  </ul>
+  </div>
+</nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="hero-text-sect">
+              <div class="logo-text animate__animated animate__bounceInDown">
+                <div >
+                    <img
+                      src="./images/Vector.png"
+                      alt="let it rip"
+                      class="img-fluid"
+                    />
+                    <h1 style="font-weight: bold;" class="animate__animated animate__zoomInDown" >LET IT RIP</h1>
+                  </div>
+                <h2 class="hero__main-text">
+                  The toot analyzer you never knew you wanted
+                </h2>
+                <h5 class="hero__info-text">
+                  Farts are a stinky business. We Know! But can you make it
+                  through a day without dumping a ton of shitty, loud, sometimes
+                  silents, smelly, trouser ripping BANGS? You shouldn’t be
+                  ashamed of that. WE ALL DO!
+                </h5>
+                <h5 class="hero__info-text">
+                  Fart Counter is an app that listens, records and (uhm)
+                  analyzes your thunderous creations for your health benefits.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 hero-img">
+            <img src="./images/hero-phone.png " alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counters">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 counter">
+            <div class="elipse">
+              <img src="images/Ellipse 61.png" class="img-fluid" />
+            </div>
+            <div class="images">
+              <img src="images/iPhone X Clay copy.png" />
+              <img
+                src="images/iPhone X Clay.png"
+                alt="#"
+                class="sect"
+              />
+              <img src="images/Remedies copy.png" />
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 counter-text animate__animated animate__fadeInTopRight">
+            <div class="container">
+              <div class="counter-inner">
+                <div class="counter-content">
+                  <h2 style = "font-weight: bold;font-family: Futura Md BT;
+                  font-style: normal;color: #063866;
+                  ">FART COUNTER.</h2>
+                  <h5>
+                    Fart Counter uses your phone’s Microphone, Barometer,
+                    Thermometer, Geiger Counter and Radioactive Sensor to
+                    accurate capture and record your asscoustics based on six
+                    properties — pitch, duration, volume, meter, temperature and
+                    vibration. It then intelligently analyzes it using an
+                    intelligent algorithm giving you a Fart state, you get a
+                    normal, abnormal or caution recommendation based on your
+                    Fart analysis
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="analyse">
+      <div class="text-center container">
+        <h1 style="font-weight: bold;">But Why Would you want to Analyse Your Farts?</h1>
+        <br />
+      </div>
+      <div class="container-fluid container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 health-partner">
+            <div class="card card-analyse" id="card1">
+              <img
+                class="card-img-top mx-auto"
+                src="images/data.json].png "
+                alt="Card image cap"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meet Your Health Partner</h5>
+                <h6 class="card-text" style="font-size: 14px;">
+                  Yes! Not only does it capture, count and record your
+                  thunderous creations, it also analyzes them using some
+                  intelligent algorithms rating them against the normal health
+                  standard. With the app, ailments such as Gastroentritis,
+                  indigestion, Carbohydrate malabsorption, Crohn’s disease and a
+                  whole lot more having FLATULENCE can be quickly diagnosed.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 home-remedy">
+            <div class="card card-analyse" id="card2">
+              <img
+                class="card-img-top mx-auto"
+                src="images/lf30_hHODoj.json].png"
+                alt="Card image cap"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Home Remedies/Treatment</h5>
+                <h6 class="card-text">
+                  Treatment suggestions and home remedies for irregular or
+                  abnormal analysis of Farts right from the dashboard. You can
+                  also track your healing process and it also indicates when to
+                  visit the doctor.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 nuggets">
+            <div class="card card-analyse3" id="card3">
+              <img
+                class="card-img-top mx-auto"
+                src="images/lf20_nXwOJj.json].png"
+                alt="Card image cap"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Explore Daily Health Nuggets</h5>
+                <h6 class="card-text">
+                  Daily health nuggests, diet and excercise recommendation right
+                  from the Explore tab.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="graphs">
+      <div class="container charts">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 graph-text">
+            <h1>
+              Interactive graphs and charts
+            </h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <img
+              src="images/Screenshot 2020-07-16 at 17.04.52.png"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class = "details">
+        <div class="container treatment">
+           <img src="images/iPhone X Clay.png" class = "one">
+           <img src = "images/iPhone X Clay copy.png" class = "two"> 
+           <img src = "images/iPhone X Clay (2).png" class = "three">
+           <img src = "images/Remedies copy.png" class = "four">  
+           <img src = "images/Vector (1).png" class = "vector">
+        </div>
+    </section>
+
+
+
+
+    <section class = "testimonial">
+        <div class= "text-center container">
+            <h2 style = "font-weight: bold;">Here’s what People have to say </h2><br>
+        </div>
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 health-partner">
+                    <div class="card" id = "card4">
+                        <img class="card-img-top mx-auto" src="images/photo-1491972690050-ba117db4dc09 1.png " alt="Card image cap" class="img-fluid" style = "border-radius: 50%">
+                        <div class="card-body" >
+                          <h5 class="card-title">Meet Your Health Partner</h5>
+                          <h6 class="card-text" style = "font-size: 13px">Yes! Not only does it capture, count and record your thunderous creations, it also analyzes them using some intelligent algorithms rating them against the normal health standard. With the app, ailments such as Gastroentritis, indigestion, Carbohydrate malabsorption, Crohn’s disease and a whole lot more having FLATULENCE can be quickly diagnosed.</h6>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 home-remedy" >
+                    <div class="card"  id = "card5">
+                        <img class="card-img-top mx-auto" src="images/photo-1491972690050-ba117db4dc09 1.png" alt="Card image cap"  class="img-fluid" style = "border-radius: 50%">
+                        <div class="card-body">
+                          <h5 class="card-title">Home Remedies/Treatment</h5>
+                          <h6 class="card-text">Treatment suggestions and home remedies for irregular or abnormal analysis of Farts right from the dashboard. You can also track your healing process and it also indicates when to visit the doctor.</h6>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 nuggets">
+                    <div class="card" id = "card6">
+                        <img class="card-img-top mx-auto" src="images/photo-1491972690050-ba117db4dc09 1.png" alt="Card image cap"  class="img-fluid" style = "border-radius: 50%">
+                        <div class="card-body">
+                          <h5 class="card-title">Explore Daily Health Nuggets</h5>
+                          <h6 class="card-text">Daily health nuggests, diet and excercise recommendation right from the Explore tab.</h6>
+                        
+                        </div>
+                      </div>
+                </div>
+            </div>
+           
+            <section>
+                <div class="notify">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class='countdown'>
+                                <div class='timer'>
+                                    <h2 id='days'>00</h2>
+                                    <small>Days</small>
+                                </div>
+                               
+                                <div class='timer'>
+                                    <h2 id='hours'>00</h2>
+                                    <small>Hours</small>
+                                </div>
+                               
+                                <div class='timer'>
+                                    <h2 id='minutes'>00</h2>
+                                    <small>Minutes</small>
+                                </div>
+                               
+                                <div class='timer'>
+                                    <h2 id='seconds'>00</h2>
+                                    <small>Seconds</small>
+                                </div>
+                               
+                                  </div>
+                            <h1 style="font-weight: bold">
+                             Want to get notified when we launch?
+                            </h1>
+                            <h5>
+                             Or rather leave a feedback, suggestion, or comment...Click on the button to enter your mail below.
+                            </h5>
+                            <a class="btn btn-danger" href="https://fartcounter.herokuapp.com/" role="button">SUBSCRIBE</a> 
+                            <h6><br>Dont forget to try out the dark mode within the menu.</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+  </body>
+
+
+
+
+
+<script>
+	window.sr = ScrollReveal();
+
+
+sr.reveal('.hero-img', {
+	duration: 2000,
+	origin: 'bottom',
+	distance: "400px",
+	viewFactor: 0.2
+});
+sr.reveal('.counter', {
+	duration: 2000,
+	origin: 'bottom',
+	distance: "300px",
+	viewFactor: 0.2
+});
+sr.reveal('.counter-text', {
+	duration: 2000,
+	origin: 'top',
+	distance: "300px",
+	viewFactor: 0.2
+});
+sr.reveal('.health-partner', {
+	duration: 1000,
+	origin: 'left',
+	distance: "300px",
+	viewFactor: 0.2
+});
+sr.reveal('.home-remedy', {
+	duration: 1000,
+	origin: 'right',
+  distance: "200px",
+  
+	viewFactor: 0.2
+});
+sr.reveal('.nuggets', {
+	duration: 1000,
+	origin: 'left',
+  distance: "300px",
+	viewFactor: 0.2
+});
+
+sr.reveal('.details', {
+	duration: 500,
+	origin: 'left',
+  distance: "300px",
+	viewFactor: 0.2
+});
+
+sr.reveal('.notify', {	
+	origin: 'top',
+  distance: "300px",
+	viewFactor: 0.2
+});
+
+</script>  
+<script src = "script.js"></script>  
+</html>

@@ -1,0 +1,315 @@
+
+/* TO PREVENT SPILLING TO THE SIDES */
+html, body {
+  position:relative;
+  overflow-x:hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+
+body {
+  font-family: "Helvetica";
+  background-color: #fbf7fb;
+}
+
+.navbar {
+  background-color: #23415c;
+  padding: 7px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #d5d5d5;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:active {
+  color: #fff;
+}
+
+.hero {
+  background: url(images/hero-img.png) no-repeat center;
+  display: table;
+  height: 100%;
+   width: 100%; 
+  position: relative; 
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.counters {
+  padding-bottom: 50px;
+}
+.counter .elipse img {
+  width: 74%;
+  position: absolute;
+  z-index: -1;
+  top: -110px;
+  left: 30px;
+}
+
+.counters .images img {
+  width: 32%;
+  height: 70%;
+}
+
+.counter .counter-content img {
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+  width: 80%;
+  z-index: -1;
+}
+
+.analyse {
+ 
+  padding: 70px 0;
+  margin-bottom: 10px;
+
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.graphs {
+  background: linear-gradient(
+    270deg,
+    #fd6234 -27.89%,
+    rgba(107, 18, 149, 0.696185) 125.45%,
+    rgba(53, 133, 207, 0) 125.47%,
+    rgba(156, 31, 159, 0.457937) 125.47%
+  );
+  border-radius: 24px;
+  height: 500px;
+  margin-bottom: 120px;
+}
+
+.graphs img {
+  width: 80%;
+}
+
+.charts {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 60vh;
+  color: white;
+}
+
+.treatment img {
+  width: 20%;
+  height: 60%;
+  
+}
+.treatment {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.treatment .two {
+  margin-top: 90px;
+}
+
+.treatment .three {
+  margin-top: 90px;
+}
+
+.treatment .vector {
+  width: 90%;
+  left: 200px;
+  z-index: -10;
+  position: absolute;
+}
+
+
+#card1,
+#card2,
+#card3 {
+  width: 22rem;
+  height: 22rem;
+  box-shadow: 55px 65px 44px rgba(197, 104, 78, 0.13), 20px 30px 30px rgba(102, 62, 51, 0.06), 10px 20px 20px rgba(102, 62, 51, 0.04), 1px 10px 10px rgba(102, 62, 51, 0.02);
+}
+
+#card4,
+#card5,
+#card6 {
+  width: 22rem;
+  height: 22rem;
+  box-shadow: 55px 65px 44px rgba(197, 104, 78, 0.13), 20px 30px 30px rgba(102, 62, 51, 0.06), 10px 20px 20px rgba(102, 62, 51, 0.04), 1px 10px 10px rgba(102, 62, 51, 0.02);
+}
+
+.app {
+    margin-top: 150px;
+    width: 100% !important;
+   
+  }
+  
+  .app img {
+    width: 70%;
+    height: 80%
+  }
+  
+  
+  .app-img {
+    position: relative;
+    top: -70px;
+    left: 70px
+  
+  }
+  
+  .app-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+  }
+  .stores {
+    display: flex;
+  }
+  .app h2 {
+    color: white;
+  }
+  .stores img {
+    width: 50%
+  }
+
+
+  .notify {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .countdown {
+      text-align: center;
+  }
+
+  .hero-text-sect {
+      color: white;
+      display: flex;
+      height: 80vh;
+      flex-direction: column ;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .hero__rip-cont{
+      display: flex;
+  }
+ 
+
+  @media (min-width: 399px){
+
+    body {
+      width: 100%;
+    }
+
+    .card {
+      margin: 0 auto;
+      margin-bottom: 20px;  
+
+  }
+
+  .hero {
+    background: url(images/hero-img.png) no-repeat center fixed;
+    display: table;
+    height: 100%;
+     width: 100%; 
+    position: relative; 
+    background-size: cover;
+    margin-bottom: 200px;
+  }
+ 
+
+  .graphs {
+      margin-top: 50px;
+  }
+
+  .counter-text .counter-content{
+      margin-top: 50px;
+  }
+  }
+
+  @media (max-width: 767px){
+     .card {
+         margin: 0 auto;
+         margin-bottom: 20px;
+
+     }
+
+    
+
+     .graphs {
+         margin-top: 50px;
+     }
+
+     .counter-text .counter-content{
+         margin-top: 50px;
+     }
+  }
+
+
+
+/* toggle */
+
+body {
+  
+    background-color: #FBF7FB;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .card-dark {
+    color: black;
+    background-color: #fff;
+  }
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .navbar li {
+    padding: 20px
+  }
+  #navbarResponsive .navbar-nav {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+/* counterdown */
+.countdown {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.timer {
+    padding: 10px;
+    font-size: 30px;
+      
+}
+
+.timer h2 {
+    font-weight: bold;
+}
+
+h5 {
+  font-family: 'Lato';
+}
