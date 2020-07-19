@@ -17,6 +17,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -101,7 +103,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 counter">
-            <div class="elipse">
+            <div class="elipse" >
               <img src="images/Ellipse 61.png" class="img-fluid" />
             </div>
             <div class="images">
@@ -217,7 +219,7 @@
               Interactive graphs and charts
             </h1>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-up">
             <img
               src="images/Screenshot 2020-07-16 at 17.04.52.png"
               class="img-fluid"
@@ -229,11 +231,15 @@
 
     <section class = "details">
         <div class="container treatment">
-           <img src="images/iPhone X Clay.png" class = "one">
-           <img src = "images/iPhone X Clay copy.png" class = "two"> 
-           <img src = "images/iPhone X Clay (2).png" class = "three">
-           <img src = "images/Remedies copy.png" class = "four">  
-           <img src = "images/Vector (1).png" class = "vector">
+           <img src="images/iPhone X Clay.png" class = "one" data-aos="flip-up"    data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000" >
+           <img src = "images/iPhone X Clay copy.png" class = "two" data-aos="flip-right"    data-aos-easing="ease-out-cubic"
+           data-aos-duration="2500"> 
+           <img src = "images/iPhone X Clay (2).png" class = "three" data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+           data-aos-duration="1500">
+           <img src = "images/Remedies copy.png" class = "four " data-aos="flip-right"    data-aos-easing="ease-in-cubic"
+           data-aos-duration="1500">  
+           <img src = "images/Vector (1).png" class = "vector" data-aos="zoom-in-up" >
         </div>
     </section>
 
@@ -284,29 +290,33 @@
                         <div class="col-12">
                             <div class='countdown'>
                                 <div class='timer'>
-                                    <h2 id='days'>00</h2>
+                                    <h2 id='days' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2500">00</h2>
                                     <small>Days</small>
                                 </div>
                                
                                 <div class='timer'>
-                                    <h2 id='hours'>00</h2>
+                                    <h2 id='hours' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2500">00</h2>
                                     <small>Hours</small>
                                 </div>
                                
                                 <div class='timer'>
-                                    <h2 id='minutes'>00</h2>
+                                    <h2 id='minutes' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2500">00</h2>
                                     <small>Minutes</small>
                                 </div>
                                
                                 <div class='timer'>
-                                    <h2 id='seconds'>00</h2>
+                                    <h2 id='seconds' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2500">00</h2>
                                     <small>Seconds</small>
                                 </div>
                                
                                   </div>
-                            <h1 style="font-weight: bold">
+                            <h3 style="font-weight: bold">
                              Want to get notified when we launch?
-                            </h1>
+                            </h3>
                             <h5>
                              Or rather leave a feedback, suggestion, or comment...Click on the button to enter your mail below.
                             </h5>
@@ -364,19 +374,16 @@ sr.reveal('.nuggets', {
 	viewFactor: 0.2
 });
 
-sr.reveal('.details', {
-	duration: 500,
-	origin: 'left',
-  distance: "300px",
-	viewFactor: 0.2
-});
 
-sr.reveal('.notify', {	
-	origin: 'top',
-  distance: "300px",
-	viewFactor: 0.2
-});
+
+
 
 </script>  
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 <script src = "script.js"></script>  
 </html>
