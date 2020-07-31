@@ -12,17 +12,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <!-- Scroll js -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Animate.css -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <!-- Animate on scroll -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-   <!-- Navigation -->
+ <!-- Navigation -->
 <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class = "container">
        <h2 id = "logo" style = "font-weight: bold;"><img src="images/fart-clipart-16 1.png" style = "width: 9%">
@@ -124,7 +131,7 @@
                   <h2 style = "font-weight: bold;font-family: Futura Md BT;
                   font-style: normal;color: #063866;
                   ">FART COUNTER.</h2>
-                  <h5>
+                  <h5 class=" geiger">
                     Fart Counter uses your phone’s Microphone, Barometer,
                     Thermometer, Geiger Counter and Radioactive Sensor to
                     accurate capture and record your asscoustics based on six
@@ -257,7 +264,7 @@
                         <img class="card-img-top mx-auto" src="images/photo-1491972690050-ba117db4dc09 1.png " alt="Card image cap" class="img-fluid" style = "border-radius: 50%">
                         <div class="card-body" >
                           <h5 class="card-title">Meet Your Health Partner</h5>
-                          <h6 class="card-text" style = "font-size: 13px">Yes! Not only does it capture, count and record your thunderous creations, it also analyzes them using some intelligent algorithms rating them against the normal health standard. With the app, ailments such as Gastroentritis, indigestion, Carbohydrate malabsorption, Crohn’s disease and a whole lot more having FLATULENCE can be quickly diagnosed.</h6>
+                          <h3 class="card-text" style = "font-size: 13px">Yes! Not only does it capture, count and record your thunderous creations, it also analyzes them using some intelligent algorithms rating them against the normal health standard..</h3>
                           
                         </div>
                       </div>
@@ -331,11 +338,9 @@
 
 
 
-
+<!-- Scroll reveal js -->
 <script>
 	window.sr = ScrollReveal();
-
-
 sr.reveal('.hero-img', {
 	duration: 2000,
 	origin: 'bottom',
@@ -375,13 +380,11 @@ sr.reveal('.nuggets', {
 });
 
 
-
-
-
 </script>  
-
+<!-- animate on scroll js -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Animate on scroll init -->
 <script>
   AOS.init();
 </script>
