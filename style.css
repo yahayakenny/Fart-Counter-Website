@@ -28,9 +28,9 @@ body {
 .hero {
   background: url(images/hero-img.png);
   display: table;
-  height: 100%;
+  height: 800px;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   font-family: 'Raleway';
   background-position:center; 
   background-attachment:scroll; 
